@@ -23,7 +23,7 @@ jobs:
        run: 
          ls -la
      - name: navigateToCode
-       run:
+       run: |
          cd my-app
          ls -la
 
@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: npm-install
-       run: 
+       run: |
          cd my-app
          npm install
 
