@@ -20,7 +20,8 @@ jobs:
      - name: checkOutCode
        uses: actions/checkout@v3
      - name: postCheckoutRum
-       run: ls -la
+       run: 
+         ls -la
 
 
 
