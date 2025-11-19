@@ -22,16 +22,13 @@ jobs:
      - name: postCheckoutRum
        run: 
          ls -la
-     - name: navigateToCode
-       run: |
-         cd my-app
-         ls -la
 
   npm-install-job:
     runs-on: ubuntu-latest
     steps:
      - name: npm-install
        run: |
+         ls -la
          cd my-app
          npm install
 
