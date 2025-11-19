@@ -10,8 +10,11 @@ on:
 jobs:
   test-print-msg-job:
     runs-on: ununtu-latest
-    name: test-job
-      echo "Hello World"
+    steps:
+     - name: test-job
+         echo "hello"
+     - name: test-job2
+         echo "World!"
 
 
 
