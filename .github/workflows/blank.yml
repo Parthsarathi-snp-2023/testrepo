@@ -19,9 +19,13 @@ jobs:
          ls -la
      - name: checkOutCode
        uses: actions/checkout@v3
-     - name: postCheckoutRum
+     - name: npm-install
        run: |
          ls -la
          cd my-app
          npm install
+     - name: build
+       run: |
+         cd my-app
+         npm run build
 
