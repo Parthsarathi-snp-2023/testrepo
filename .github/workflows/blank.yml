@@ -2,8 +2,9 @@
 run-name: Test-pipeline-run ${{ github.actor }}
 
 #Events to run pipeline
-on: push
-  branches: 
+on: 
+  push:
+    branches: 
     - main
 
 echo "Hello World"
