@@ -11,12 +11,12 @@ jobs:
   test-print-msg-job:
     runs-on: ubuntu-latest
     steps:
-     - name: test-job
+     - name: check-directory
        run:
-         echo "hello"
-     - name: test-job2
+         pwd
+     - name: listOutFiles
        run:
-         echo "World!"
+         ls -la
 
 
 
